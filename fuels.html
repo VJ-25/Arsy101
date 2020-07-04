@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="exc.css">
-    <meta charset="utf-8">
-    
+   
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
   <title>Fuels</title>
@@ -26,9 +26,9 @@
               <a class="nav-link" href="comm.html">Home <span class="sr-only">(current)</span></a>
             </li>
               
-              </li>
+              
               <li class="nav-item dropdown" style="padding: 10px;margin-right: 25px; margin-left: 25px;">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Agricultural Products
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -39,7 +39,7 @@
                       </div>
                   </li>
                   <li class="nav-item dropdown pull-right" style="padding: 10px;margin-right: 25px; margin-left: 25px;" >
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Login
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,11 +52,8 @@
         </div>
       </nav>
     </header>
-
-
-   
-            <div class="row">
-              <div class="panel panel-default sidebar-menu pen">
+        <div class="row">
+                 <div class="panel panel-default sidebar-menu pen ">
               <div class="panel-heading">
                 <h3 class="h4 panel-title">Agricultural Products</h3>
               </div>
@@ -73,8 +70,20 @@
                 </ul>
               </div>
             </div>
+            <div class="aks">
+              Fuels
+            </div>
+          </div>
 
-              <div class="  tile">
+
+
+   
+            <div class="row">
+         
+
+              <div class="tile">
+
+
                 <img src="ethanol.png" class="card-img-top img-fluid im" alt="ethanol">
                   <div class="card-body">
                     <h2 class="card-title">Ethanol</h2>
@@ -83,9 +92,61 @@
                     <h4>Price:INR 2345 per litre</h4>
                     <h4>No negotiations</h4>
                     <h4 class="contact">Contact: 88979288</h4>
+                    <button id = "myBtn">Send your Enquiry</button>
+                      <div id = "myModal" class="modal">
+                   
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close"></span>
+                        <h2>ENQUIRY</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <label for="enquiry"><b>Enquiry</b></label>
+                        <input type="text" name="enquiry" placeholder="Enter your Enquiry" required="required">
+                        <label for="uname"><b>Name</b></label>
+                        <input type="text" name="uname" placeholder="Enter your Name" required="required">
+                        <label for="contact"><b>Contact</b></label>
+                        <input type="number" name="enquiry" placeholder="Enter your Contact" required="required">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit">
+                        	<a href="enquiry.html">Send Your Enquiry</a>
+                        	</button>
+                      </div>
+                  </div>
+                    </div>
+                    <script type="text/javascript">
+                    	var modal = document.getElementById("myModal");
+
+						// Get the button that opens the modal
+						var btn = document.getElementById("myBtn");
+
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on the button, open the modal
+						btn.onclick = function() {
+						modal.style.display = "block";
+						}
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() {
+						modal.style.display = "none";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						if (event.target == modal) {
+						modal.style.display = "none";
+						}
+						}
+                    </script>
+                    
                   </div>
                 </div>
-                <div class=" tile">
+                <div class="tile">
                   <img src="bio.png" class="card-img-top img-fluid im" alt="biofuel">
                   <div class="card-body">
                     <h2 class="card-title">Bio-fuel</h2>
@@ -95,8 +156,62 @@
                     <h4>Price:INR 50000 per ton</h4>
                     <h4>Open to negotiations</h4>
                     <h4 class="contact">Contact: 092389288</h4>
+                    <button id = "myBtn">Send your Enquiry</button>
+                      <div id = "myModal" class="modal">
+                   
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close"></span>
+                        <h2>ENQUIRY</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <label for="enquiry"><b>Enquiry</b></label>
+                        <input type="text" name="enquiry" placeholder="Enter your Enquiry" required="required">
+                        <label for="uname"><b>Name</b></label>
+                        <input type="text" name="uname" placeholder="Enter your Name" required="required">
+                        <label for="contact"><b>Contact</b></label>
+                        <input type="number" name="enquiry" placeholder="Enter your Contact" required="required">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit">
+                        	<a href="enquiry.html">Send Your Enquiry</a>
+                        	</button>
+                      </div>
+                  </div>
+                    </div>
+                    <script type="text/javascript">
+                    	var modal = document.getElementById("myModal");
+
+						// Get the button that opens the modal
+						var btn = document.getElementById("myBtn");
+
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on the button, open the modal
+						btn.onclick = function() {
+						modal.style.display = "block";
+						}
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() {
+						modal.style.display = "none";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						if (event.target == modal) {
+						modal.style.display = "none";
+						}
+						}
+                    </script>
+                    
                   </div>
                 </div>
+                
+                
                 <div class="tile">
                   <img src="veg.png" class="card-img-top img-fluid im" alt="Vegetable Oil">
                   <div class="card-body">
@@ -107,9 +222,62 @@
                     <h4>Price:INR 500 per bottle</h4>
                     <h4>Fixed Price</h4>
                     <h4 class="contact">Contact: 72389288</h4>
+                    <button id = "myBtn">Send your Enquiry</button>
+                      <div id = "myModal" class="modal">
+                   
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close"></span>
+                        <h2>ENQUIRY</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <label for="enquiry"><b>Enquiry</b></label>
+                        <input type="text" name="enquiry" placeholder="Enter your Enquiry" required="required">
+                        <label for="uname"><b>Name</b></label>
+                        <input type="text" name="uname" placeholder="Enter your Name" required="required">
+                        <label for="contact"><b>Contact</b></label>
+                        <input type="number" name="enquiry" placeholder="Enter your Contact" required="required">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit">
+                        	<a href="enquiry.html">Send Your Enquiry</a>
+                        	</button>
+                      </div>
+                  </div>
+                    </div>
+                    <script type="text/javascript">
+                    	var modal = document.getElementById("myModal");
+
+						// Get the button that opens the modal
+						var btn = document.getElementById("myBtn");
+
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on the button, open the modal
+						btn.onclick = function() {
+						modal.style.display = "block";
+						}
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() {
+						modal.style.display = "none";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						if (event.target == modal) {
+						modal.style.display = "none";
+						}
+						}
+                    </script>
+                    
                   </div>
                 </div>
-                <div class="tile charger">
+                 
+                <div class="tile">
                   <img src="natural.png" class="card-img-top img-fluid im" alt="Natural Gas">
                   <div class="card-body">
                     
@@ -119,8 +287,61 @@
                     <h4>Price:INR 5000 per bottle</h4>
                     <h4>Fixed Price</h4>
                     <h4 class="contact">Contact: 7489288</h4>
+                    <button id = "myBtn">Send your Enquiry</button>
+                      <div id = "myModal" class="modal">
+                   
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close"></span>
+                        <h2>ENQUIRY</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <label for="enquiry"><b>Enquiry</b></label>
+                        <input type="text" name="enquiry" placeholder="Enter your Enquiry" required="required">
+                        <label for="uname"><b>Name</b></label>
+                        <input type="text" name="uname" placeholder="Enter your Name" required="required">
+                        <label for="contact"><b>Contact</b></label>
+                        <input type="number" name="enquiry" placeholder="Enter your Contact" required="required">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit">
+                        	<a href="enquiry.html">Send Your Enquiry</a>
+                        	</button>
+                      </div>
+                  </div>
+                    </div>
+                    <script type="text/javascript">
+                    	var modal = document.getElementById("myModal");
+
+						// Get the button that opens the modal
+						var btn = document.getElementById("myBtn");
+
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on the button, open the modal
+						btn.onclick = function() {
+						modal.style.display = "block";
+						}
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() {
+						modal.style.display = "none";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						if (event.target == modal) {
+						modal.style.display = "none";
+						}
+						}
+                    </script>
+                    
                   </div>
                 </div>
+                 
                 <div class="tile">
                   <img src="gasoline.png" class="card-img-top img-fluid im" alt="gasoline">
                   <div class="card-body">
@@ -131,13 +352,63 @@
                     <h4>Price:INR 764 per litre</h4>
                     <h4>Fixed Price</h4>
                     <h4 class="contact">Contact: 72389288</h4>
+                    <button id = "myBtn">Send your Enquiry</button>
+                      <div id = "myModal" class="modal">
+                   
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close"></span>
+                        <h2>ENQUIRY</h2>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <label for="enquiry"><b>Enquiry</b></label>
+                        <input type="text" name="enquiry" placeholder="Enter your Enquiry" required="required">
+                        <label for="uname"><b>Name</b></label>
+                        <input type="text" name="uname" placeholder="Enter your Name" required="required">
+                        <label for="contact"><b>Contact</b></label>
+                        <input type="number" name="enquiry" placeholder="Enter your Contact" required="required">
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit">
+                        	<a href="enquiry.html">Send Your Enquiry</a>
+                        	</button>
+                      </div>
+                  </div>
+                    </div>
+                    <script type="text/javascript">
+                    	var modal = document.getElementById("myModal");
+
+						// Get the button that opens the modal
+						var btn = document.getElementById("myBtn");
+
+						// Get the <span> element that closes the modal
+						var span = document.getElementsByClassName("close")[0];
+
+						// When the user clicks on the button, open the modal
+						btn.onclick = function() {
+						modal.style.display = "block";
+						}
+
+						// When the user clicks on <span> (x), close the modal
+						span.onclick = function() {
+						modal.style.display = "none";
+						}
+
+						// When the user clicks anywhere outside of the modal, close it
+						window.onclick = function(event) {
+						if (event.target == modal) {
+						modal.style.display = "none";
+						}
+						}
+                    </script>
+                    
                   </div>
                 </div>
-
-
             </div>
-    </div>      
-    
+
+            
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
